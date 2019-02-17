@@ -1,0 +1,28 @@
+/* 
+Nombre: Valeria Alejandra Castillo De la Rosa
+Matricula: 1664547 
+Grupo: 003
+Hora: N5
+Fecha: 17/02/19
+
+Titulo: Círculo que rebota a lo ancho de la pantalla
+*/
+
+var x = 200;
+var vel = 4;
+
+function setup() {
+  createCanvas(400,400);
+}
+function draw() {
+  background(0);
+    fill(255);
+    ellipse(x,200,50,50);
+    x = x + vel;
+    if(x > 375){
+        vel = vel*-1;
+    }
+    if(x < 25){
+        vel = vel*-1;
+    }
+}
